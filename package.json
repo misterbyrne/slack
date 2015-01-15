@@ -1,0 +1,29 @@
+{
+  "name": "Slack",
+  "description": "Slack Desktop app.",
+  "version": "0.0.1",
+  "main": "index.html",
+  "node-main": "main.js",
+  "inject-js-start": "inject-start.js",
+  "inject-js-end": "inject-end.js",
+  "node-remote": "<local>;*.slack.com;slack.com",
+  "window": {
+    "icon": "icon_512x512.png",
+    "show": true,
+    "toolbar": false,
+    "frame": true,
+    "position": "center",
+    "width": 800,
+    "height": 630,
+    "title": "Slack - Loading..."
+  },
+  "dependencies": {
+    "node-notifier": "git+ssh://git@github.com:misterbyrne/node-notifier.git"
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "devDependencies": {
+    "node-webkit-builder": "^1.0.4"
+  }
+}

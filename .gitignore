@@ -1,0 +1,3 @@
+build/Slack/*
+node_modules/*
+npm-debug.log
