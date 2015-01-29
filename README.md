@@ -19,7 +19,8 @@ You should be able to build the final executable on Windows by doing the followi
 ## Disclaimers
 
 - I copied index.html from the official #slack app for Mac.  Sorry.
-- Everything to do with slack the service including the logos and stuff is copyright and trademark slack, not me.
+- Everything to do with slack the service including the logos etc. is copyright slack, not me.
+- I've included a small Flash plugin so you can play videos inline without having to have Flash player installed.  That .dll was taken from the Flash installer download for Windows.  Everything to do with that is copyright Adobe.
 - This work is in no way affiliated to slack and is just intended as a stopgap for use until an official Windows app arrives.
 - This is my first go at anything node.  I probably did stuff wrong.
 - node-webkit is cross platform, and so are the runtime dependencies (e.g. node-notifier)
