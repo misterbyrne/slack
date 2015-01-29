@@ -24,6 +24,10 @@
     "plugin": true
   },
   "devDependencies": {
+    "enigmavirtualbox": "^0.9.3",
     "node-webkit-builder": "^1.0.4"
+  },
+  "scripts": {
+    "build": "build\\build.cmd"
   }
 }
