@@ -1,7 +1,7 @@
 {
   "name": "Slack",
   "description": "Slack Desktop app.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.html",
   "node-main": "main.js",
   "inject-js-start": "inject-start.js",
@@ -18,6 +18,7 @@
     "title": "Slack - Loading..."
   },
   "dependencies": {
+    "bluebird": "^2.9.3",
     "node-notifier": "git+ssh://git@github.com:misterbyrne/node-notifier.git"
   },
   "webkit": {
@@ -26,6 +27,10 @@
   "devDependencies": {
     "enigmavirtualbox": "^0.9.3",
     "node-webkit-builder": "^1.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/misterbyrne/slack.git"
   },
   "scripts": {
     "build": "build\\build.cmd"

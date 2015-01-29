@@ -15,7 +15,7 @@ module.exports = {
 			}
 			var downloader = require('node-webkit-builder/lib/downloader.js');
 			var zipUrl = 'http://upx.sourceforge.net/download/' + version + '.zip';
-			console.log('Download UPX from ' + zipUrl);
+			console.log('Downloading UPX from ' + zipUrl);
 			return downloader.downloadAndUnpack(cachePath, zipUrl)
 				.then(function(files) {
 					return Promise.resolve(exePath);

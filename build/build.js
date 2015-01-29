@@ -9,6 +9,7 @@ var nw = new NwBuilder({
 	'./node_modules/**/*.{js,json}',
 	'./node_modules/**/bin/**',
 	'!./node_modules/node-webkit-builder/**',
+	'!./node_modules/enigmavirtualbox/**',
 	'!./node_modules/node-notifier/test/**',
 	'./node_modules/node-notifier/vendor/notifu/notifu.exe',
 	'./node_modules/node-notifier/vendor/toaster/*.{exe,dll}'
