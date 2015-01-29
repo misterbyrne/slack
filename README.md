@@ -7,6 +7,10 @@ notification badges, and it behaved weirdly with browser extensions and when usi
 
 It uses the impressive node-webkit (currently being rebranded to [nw.js] (http://nwjs.io))
 
+## Releases
+
+Download the latest binary from [here] (https://github.com/misterbyrne/slack/releases/latest)
+
 ## Building
 
 You should be able to build the final executable on Windows by doing the following:
