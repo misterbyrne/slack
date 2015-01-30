@@ -17,8 +17,9 @@ You should be able to build the final executable on Windows by doing the followi
 
 1. Install [nodejs] (https://nodejs.org)
 2. If the installation of nodejs didn't include it (it usually does) install node's package manager, [npm] (https://www.npmjs.com)
-2. Clone this repository
-3. From the root of the repository run `npm run build`
+3. Install nodewebkit globally by running `npm install nodewebkit -g`
+4. Clone this repository
+5. From the root of the repository run `npm run build`
 
 ## Disclaimers
 
@@ -31,3 +32,4 @@ You should be able to build the final executable on Windows by doing the followi
   so running / building on Linux and even OSX would be possible.
   The compressing / boxing steps would be redundant for those platforms though 
   ...in fact the whole thing is redundant for Mac cos the official slack app is great
+- I didn't add node-webkit to package.json as a dev dependency because it's large and it makes more sense to install it globally
