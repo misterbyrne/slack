@@ -11,15 +11,20 @@ It uses the impressive node-webkit (currently being rebranded to [nw.js] (http:/
 
 Download the latest binary from [here] (https://github.com/misterbyrne/slack/releases/latest)
 
-## Building
+## Running & Building
 
-You should be able to build the final executable on Windows by doing the following:
+You should be able to run on any platform by doing the following:
 
 1. Install [nodejs] (https://nodejs.org)
 2. If the installation of nodejs didn't include it (it usually does) install node's package manager, [npm] (https://www.npmjs.com)
 3. Install nodewebkit globally by running `npm install nodewebkit -g`
-4. Clone this repository
-5. From the root of the repository run `npm run build`
+4. Clone this repository and open a terminal at the root of the repository
+5. Install the project dependencies by running `npm install`
+6. Run `nodewebkit`
+
+You should be able to build the final executable on Windows by doing the following:
+
+7. From the root of the repository run `npm run build`
 
 ## Disclaimers
 
