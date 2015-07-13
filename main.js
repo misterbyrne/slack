@@ -1,4 +1,7 @@
 var path = require('path');
+var emoji = require('./emoji.min.js');
+emoji.inits.env = true;
+emoji.replace_mode = 'unified';
 
 var isInitialised = false;
 exports.initOnce = function() {
@@ -41,7 +44,7 @@ exports.Fluid = function() {
 	
 	fluid.showGrowlNotification = function(message) {
 		if (require('node-notifier/lib/utils').isWin8()) {
-			message.description = window.emoji.replace_colons_with_unified(message.description);
+			message.description = emoji.replace_colons(message.description);
 		}
 	
 		notifier.notify({
