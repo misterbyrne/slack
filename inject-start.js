@@ -1,5 +1,13 @@
-window.fluid = new process.mainModule.exports.Fluid();
-window.ssbwin = {}
+var processIsDefined = typeof(process) !== "undefined";
+if (processIsDefined) {
+	window.fluid = new process.mainModule.exports.Fluid();
+}
+window.ssbwin = {};
+window.CVO = {
+	log: function() {
+		window['$CVO'] = { run: function() { } };
+	 }
+};
 
 // create a stub so it looks like we're using the mac app
 window.macgap = {
@@ -11,8 +19,10 @@ window.macgap = {
 	teams: {
 		updateTitleBarColor: function(color) { }
 	}
-}
+};
 
 // do native stuff
-process.mainModule.exports.initOnce();
-process.mainModule.exports.initWindow();
+if (processIsDefined) {
+	process.mainModule.exports.initOnce();
+	process.mainModule.exports.initWindow();
+}
